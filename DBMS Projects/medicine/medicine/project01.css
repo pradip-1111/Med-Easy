@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    cursor: pointer;
+}
+.navbar{
+    height: 60px;
+    background: #000;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    height: 30px;
+    width: 100px;
+    color: goldenrod;
+    font-size: 25px;
+}
+.border{
+    border: 2px solid transparent;
+
+}
+.border:hover{
+    border: 2px solid white;
+}
+.location{
+    display: flex;
+}
+.box2{
+    margin-left: 5px;
+}
+.search-bar{
+    display: flex;
+    height: 30px;
+    width: 400px;
+    background-color: chocolate;
+}
+.All{
+    width: 50px;
+    color: brown;
+    text-align: center;
+    background-color: gray;
+}
+.input{
+    width: 350px;
+    border: none;
+    background-color: aliceblue;
+}
+.search-icon{
+    width: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 1.3rem;
+}
+.search-bar:hover{
+    border: 2px solid greenyellow;
+}
+.size{
+    font-size: 13px;
+    color:skyblue;
+}
+.box4{
+    font-weight: bolder;
+}
+.cart {
+    display: flex;   
+}
+.cart i{
+    font-size: 30px;
+}
+.size2{
+    font-size: 15px;
+}
+.help{
+    margin-left: 0px;
+    text-decoration: underline;
+}
+.panel{
+    background-color: rgba(0, 0, 0, 0.723);
+    display: flex;
+    height: 30px;
+    justify-content: space-evenly;
+    text-align: center;
+    color: wheat;
+}
+.panel-opt{
+    display: flex;
+    margin-left: 20px;
+    width: 1000px;
+}
+.offer{
+    margin-left: 20px;
+
+}
+.service{
+    margin-left: 20px;
+
+}
+.card{
+    margin-left: 20px;
+
+}
+.sell{
+    margin-left: 20px;
+
+}
+.deals{
+    text-align: left;
+}
+
+.main{
+    background-image:url(bg02.jpg);
+    height:150px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+.msg{
+    background-color: burlywood;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 80%;
+    margin-bottom: 25px;
+    bottom: 25px;
+}
+.shop-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #a6dda6;
+}
+.box{
+    height: 380px;
+    border: 2px solid red;
+    width: 24%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 10px;
+}
+.img01{
+    height: 300px;
+    background-image:url(med/med1.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-con{
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.img02{
+    height: 300px;
+    background-image:url(med/med2.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img03{
+    height: 300px;
+    background-image:url(med/med3.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img04{
+    height: 300px;
+    background-image:url(med/med4.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img05{
+    height: 300px;
+    background-image:url(med/med5.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img06{
+    height: 300px;
+    background-image:url(med/med6.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img07{
+    height: 300px;
+    background-image:url(med/med7.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img08{
+    height: 300px;
+    background-image:url(med/med8.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img09{
+    height: 300px;
+    background-image:url(med/med9.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img10{
+    height: 300px;
+    background-image:url(med/med10.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img11{
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 1rem;
+    background-image:url(med/med11.webp);
+    margin-top: 1rem;
+}
+
+.img12{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    background-image:url(med/med12.webp);
+    margin-bottom: 1rem;
+}
+.img13{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    background-image:url(med/med13.webp);
+    margin-bottom: 1rem;
+}
+.img14{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    background-image:url(med/med14.webp);
+    margin-bottom: 1rem;
+}
+.img15{
+    height: 300px;
+    background-size: cover;
+    background-image:url(med/med15.webp);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img16{
+    height: 300px;
+    background-size: cover;
+    background-image:url(med/med16.webp);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img17{
+    height: 300px;
+    background-size: cover;
+    background-image:url(med/med17.webp);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img18{
+    height: 300px;
+    background-image:url(med/med18.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img19{
+    height: 300px;
+    background-image:url(med/med19.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img20{
+    height: 300px;
+    background-image:url(med/med20.webp);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}Add this to your project01.css file
+
+.welcome {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(0%, 0%);
+    text-align: center;
+    color:rgb(220, 174, 174);
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+
+}
+.button{
+    height: 25px;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    padding: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+

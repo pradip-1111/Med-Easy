@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | MedCare</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6D83F2, #65EBC6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+
+.signup-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.signup-container .header {
+    margin-bottom: 30px;
+}
+
+.signup-container h1 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.signup-container p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9;
+}
+
+.signup-form .form-group input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.login-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-text a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 30px 20px;
+    }
+
+    .signup-container h1 {
+        font-size: 24px;
+    }
+
+    .signup-form .form-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <div class="header">
+            <h1>Join MedCare</h1>
+            <p>Get your medications delivered at your doorstep</p>
+        </div>
+
+        <form action="#" method="POST" class="signup-form">
+            <div class="form-group">
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Create Account</button>
+
+            <p class="login-text">Already have an account? <a href="#">Login here</a></p>
+        </form>
+    </div>
+
+
+    <script>
+        function checkUserExists() {
+            // Get the values of name and email
+            let fullname = document.getElementById("fullname").value;
+            let email = document.getElementById("email").value;
+
+            // Prepare data to be sent via AJAX
+            let formData = new FormData();
+            formData.append('fullname', fullname);
+            formData.append('email', email);
+
+            // Make an AJAX request to the server-side script to check if user exists
+            fetch('check_user.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.exists) {
+                    alert('User with this name or email already exists!');
+                } else {
+                    // Submit the form if no user exists
+                    document.querySelector(".signup-form").submit();
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+            // Prevent the form from submitting until the check is done
+            return false;
+        }
+    </script>
+
+</body>
+</html>

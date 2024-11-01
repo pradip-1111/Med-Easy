@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair checkup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .bar{
+            height: 150px;
+            width: 100%;
+            background-color: #10847e;
+            position: fixed;
+            display: flex;
+
+        }
+        .logo{
+            height: 150px;
+            width: 200px;
+            border: 2px solid red;
+            position: relative;
+        }
+        input{
+            height: 39.9%;
+            width: 40%;
+            position: relative;
+            top: 20px;
+            left: 130px;
+            border: transparent;
+        }
+        .pin{
+            position: relative;
+            top: 20px;
+            left: 130px;
+            height: 60px;
+            width: 100px;
+            padding: 14px;
+            /* border: 2px solid red; */
+            background-color: rgb(241, 241, 241);
+            font-size: 19px;
+            font-weight: bolder;
+            color: green;
+        }
+        .search{
+            position: relative;
+            top:40px ;
+            left:95px;
+            font-size: 20px;
+            /* border: 2px solid red; */
+
+        }
+        navbar{
+            height: 40px;
+            width: 40%;
+            padding: 10px;
+            position: absolute;
+            top: 100px;
+            left: 270px;
+            /* border: 2px solid red; */
+            
+        }
+        navbar ul{
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+        }
+        navbar ul li{
+            font-size: 17px;
+            text-decoration: none;
+            color: white;
+        }
+        .percent{
+            position: relative;
+            top: 107px;
+            left: -10px;
+            font-size: 17px;
+            color: white;
+        }
+        .offer{
+            position: relative;
+            top: 105px;
+            left: -10px;
+            font-size: 20px;
+            color: white;
+            margin-left: 8px;
+        }
+        .log{
+            position: relative;
+            top: 105px;
+            left: -10px;
+            font-size: 20px;
+            color: white;
+            margin-left: 35px;
+            text-decoration: none;
+        }
+        .cart{
+            position: relative;
+            top: 105px;
+            font-size: 20px;
+            left: -10px;
+            color: white;
+            margin-left: 35px;
+            text-decoration: none;
+        }
+        .shop{
+            position: relative;
+            top: 105px;
+            left: -10px;
+            font-size: 20px;
+            color: white;
+            margin-left: 5px;
+            text-decoration: none;
+        }
+        .sec-bar{
+            height: 50px;
+            width: 60%;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 180px;
+            left: 100px;
+            background-color: rgb(234, 234, 234);
+            border-radius: 10px;
+        }
+        .all{
+            position: relative;
+            /* border: 2px solid red; */
+            font-size: 18px;
+            top: 15px;
+            left: 20px;
+            padding: 6px;
+            border-radius: 10px;
+            background-color: rgb(190, 221, 248);
+        }
+        .lab{
+            position: relative;
+            /* border: 2px solid red; */
+            font-size: 18px;
+            top: 15px;
+            left: 20px;
+            padding: 6px;
+            border-radius: 10px;
+            background-color: rgb(190, 221, 248);
+        }
+        h3{
+            position: relative;
+            top: 200px;
+            left: 100px;
+
+        }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <div class="logo"></div>
+            <span class="pin">Select PinCode</span>
+            <input type="text">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+            <navbar>
+                <ul>
+                    <li>Order Medicine</li>
+                    <li>Lab Test</li>
+                    <li>Health Products</li>
+                    <li>Report</li>
+                </ul>
+            </navbar>
+            <i class="fa-solid fa-percent percent"></i><span class="offer">offer</span>
+            <a href="login.html" class="log"><span>Login/SignUp</span></a>
+            <i class="fa-solid fa-cart-shopping cart" ></i><span class="shop">Cart</span>
+        </div>
+        <div class="sec-bar">
+            <span class="all">All</span>
+            <span class="lab">LabTest</span>
+        </div>
+        <h3>Recommanded Package</h3>
+        <div class="container">
+            
+        </div>
+    </div>
+</body>
+</html>

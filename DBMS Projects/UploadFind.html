@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer {
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(30px);   
+        }
+        .inner {
+            height: 39rem;
+            width: 25rem;
+            background: none;
+            box-shadow:3px 4px 5px black;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            border-radius: 2rem;   
+        }
+        .radio{
+            display:inline-flex;
+        }
+        #yes{
+            margin-bottom: .5rem;
+        }
+        #no{
+            margin-bottom: .5rem;
+        }
+        .yes{
+            margin-top: .7rem;
+            margin-right: 1.5rem;
+            
+        }
+        .front{
+            height: 4rem;
+            width: 20rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline-style: dotted;
+        }
+        .back{
+            height: 4rem;
+            width: 20rem;
+            outline-style: dotted;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 80%;
+           color:black;
+            outline: none;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+            align-items:center;
+            cursor: pointer;
+            transition: .5s all ease;
+            background: transparent;
+            border-bottom:2px solid black;
+            margin-top: 1rem;
+        }
+        p{
+            margin-top: 1rem;
+        }
+        .describe{
+            height: 3rem;
+            outline-style: dotted;
+
+        }
+        .button1{
+    padding: 10px;
+   background-color: #38a6eb;
+    color: #fff;
+    border: none;
+    width: 5rem;
+    height: 2.5rem;
+    margin-top: .5rem;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: box-shadow 0.3s ease; 
+    text-decoration: none;  
+}
+   .button1:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); 
+    transform: translateY(3px); 
+   }
+   .file-selector{
+    border-bottom: none;
+    border: none;
+   }
+</style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>Upload Details</h1>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="phone" placeholder="Phone Number" required>
+            <input type="address" placeholder="Address" required>
+            <p>Are you below 18?</p>
+            <div class="radio">
+                <input type="radio" id="yes" name="fav" value="yes">
+                <label for="#" class="yes">Yes</label><br>
+                <input type="radio" id="no" name="fav" value="no">
+                <label for="no" class="yes">No</label><br>
+            </div>
+            <p>Attached The Images</p>
+            <div class="front">
+                <input type="file" class="file-selector" multiple>
+            </div>
+            <div class="back"> <input type="file" class="file-selector" multiple></div>
+            <button class="button1">Upload</button>
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>

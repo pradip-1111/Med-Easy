@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, rgb(229, 8, 192), rgb(83, 176, 222));
+        }
+
+        .outer {
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(30px);
+           
+        }
+
+        .inner {
+            height: 30rem;
+            width: 20rem;
+            background-color: rgb(246, 241, 241);
+            border-radius: 2rem;
+            box-shadow:3px 4px 5px black;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            
+        }
+
+        .inner h1 {
+            text-align: center;
+            color: darkred;
+        }
+
+        .user {
+            margin-bottom: 1rem; 
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            color:black;
+        }
+        .name:hover{
+            transform: scale(1.1);
+
+        }
+
+        .name input {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+            align-items:center;
+            margin-right: 2rem;
+            cursor: pointer;
+            transition: .5s all ease;
+        }
+        .pass{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .button1{
+    padding: 10px;
+    background: linear-gradient(to right, rgb(229, 8, 192), rgb(83, 176, 222));
+    color: #fff;
+    border: none;
+    width: 5rem;
+    height: 2.5rem;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: box-shadow 0.3s ease;   
+}
+   .button1:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); 
+    transform: translateY(3px); 
+   }
+   .remind{
+    display:flex;
+   }
+   #me{
+    margin-right: 2rem;
+    cursor: pointer;
+   }
+   #for:hover{
+    text-decoration: underline;
+    cursor: pointer;
+   }
+   .back{
+    transform: translate(-45rem) translateY(-13rem);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #ed6868;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>Login</h1>
+            <div class="user"><i class="fa-solid fa-user"></i></div>
+            <div class="name" for="name"><input type="username" placeholder="username" class="name" required></div>
+            <div class="name" for="name"><input type="password" placeholder="password" class="name pass" required></div>
+            <div class="remind">
+                <input type="checkbox" class="check"><p id="me">Remember me</p>
+                    <p id="for">Forget Password?</p>
+            </div>
+
+            <button class="button1"><a href="index.html">LogIn</a></button>
+        </div>
+        <div class="back"><a href="competeition.html"></i></a></div>
+    </div>
+</body>
+</html>
